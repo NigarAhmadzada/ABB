@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ABB - Müasir, Faydalı, Universal</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="font.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="js.js" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- H E A D E R -->
+        <header>
+            <div id="header-1">
+                <div id="header-11">
+                    <select>
+                        <option>Fərdi Şəxslər</option>
+                        <option>Kiçik Biznes</option>
+                        <option>KOB</option>
+                        <option>Korporativ</option>
+                    </select>
+                </div>
+                <div id="header-12">
+                    <div id="header-search">
+                        <i onclick="headerSearch()" class="fa-solid fa-magnifying-glass"></i>
+                        <span id="axtaris">Sizə necə kömək edə bilərik?</span>
+                    </div>
+                    <div id="header-lang">
+                        <select>
+                            <option>AZ</option>
+                            <option>EN</option>
+                            <option>RU</option>
+                        </select>
+                    </div>
+                    <div id="header-number">
+                        <span><i class="fa-solid fa-phone"></i><span>937</span>
+                    </div>
+                </div>
+            </div>
+            <div id="header-2">
+                <div id="header-img">
+                    <img src="img/abblogo.png" alt="ABB">
+                </div>
+                <div id="header-22">
+                    <i onclick="toggle()" class="fa-solid fa-bars"></i>
+                    <div id="hamburger"></div>
+                </div>
+            </div>
+        </header>
+
+
+            <!-- <div id="header-1">
+                <div id="header-11">
+                    <img src="img/abblogo.png" alt="ABB" />
+                </div>
+                <div id="header-12">
+                    <p>Fərdi Şəxslər</p> <span>/</span>
+                    <p>Kiçik Biznes</p> <span>/</span>
+                    <p>KOB</p> <span>/</span>
+                    <p>Korporativ</p>
+                </div>
+                <div id="header-13">
+                    <a href=""><i class="fa-solid fa-suitcase"></i>Karyera portalı</a>
+                    <a href=""><i class="fa-regular fa-circle-right"></i><span>İnternet bankçılıq</span></a>
+                </div>
+            </div> -->
+
+        <!-- M A I N -->
+        <main>
+            <div id="main-carousel">
+                <div id="slider">
+                    <button onclick="change(-1)">⯇</button>
+                    <button onclick="change(1)">⯈</button>
+                </div>
+            </div>
+            <div id="main-kecidler">
+                <div id="sade-kecidler">
+                    <h2>Sadə keçidlər</h2>
+                </div>
+                <div class="kecid-cards">
+                    <div class="cards" id="card-1">
+                        <div class="cards-word">
+                            <h4>Tam DigiCard</h4>
+                            <p>Bir çox üstünlüklərlə həm rəqəmsal, həm real debet kart</p>
+                            <button>Sifariş edin</button>
+                        </div>
+                        <div class="cards-img">
+                            <img src="img/main-kecid-1.webp" alt="abb">
+                        </div>
+                    </div>
+                    <div class="cards" id="card-2">
+                        <div class="cards-word">
+                            <h4>Nağd pul krediti</h4>
+                            <p>Bütün ehtiyaclarınız üçün 40 000 AZN-dək nağd pul krediti</p>
+                            <button>Kredit alın</button>
+                        </div>
+                        <div class="cards-img">
+                            <img src="img/main-kecid-2.webp" alt="abb">
+                        </div>
+                    </div>
+                    <div class="cards" id="card-3">
+                        <div class="cards-word">
+                            <h4>ABB Biz</h4>
+                            <p>Biznesinizin daha səmərəli və asan idarəedilməsi üçün çoxfunksiyalı həllər </p>
+                            <button>Daha ətraflı</button>
+                        </div>
+                        <div class="cards-img">
+                            <img src="img/main-kecid-3.webp" alt="abb">
+                        </div>
+                    </div>
+                    <div class="cards" id="card-4">
+                        <div class="cards-word">
+                            <h4>TamKart kredit kartı</h4>
+                            <p>Hər kəs üçün 30 ayadək hissəli ödəniş imkanı olan faizsiz taksit kartı</p>
+                            <button>Sifariş edin</button>
+                        </div>
+                        <div class="cards-img">
+                            <img src="img/main-kecid-4.webp" alt="abb">
+                        </div>
+                    </div>
+                    <div class="cards" id="card-5">
+                        <div class="cards-word">
+                            <h4>İnvestisiya</h4>
+                            <p>Səhm və investisiya fondlarının paylarının alışı və satışı üçün geniş imkanlar ABB mobile-da</p>
+                            <button>Daha ətraflı</button>
+                        </div>
+                        <div class="cards-img">
+                            <img src="img/main-kecid-5.webp" alt="abb">
+                        </div>
+                    </div>
+                    <div class="cards" id="card-6">
+                        <div class="cards-word">
+                            <h4>İpoteka krediti</h4>
+                            <p>15-dən çox kateqoriya üzrə hər kəsə uyğun sərfəli daxili ipoteka kreditləri</p>
+                            <button>MÜraciət edin</button>
+                        </div>
+                        <div class="cards-img">
+                            <img src="img/main-kecid-6.webp" alt="abb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            div
+        </main>
+
+        <!-- F O O T E R -->
+        <footer>
+            <!-- <div id="footer-1">
+                <div>
+                    <img src="img/abblogo.png" alt="ABB" />
+                </div>
+                <div id="footer-1-a">
+                    <span><i class="fa-solid fa-phone"></i><span> 937</span>
+                </div>
+            </div> -->
+            <div id="footer-2">
+                <div id="footer-21">
+                    <p>Fərdi Şəxslər</p> <span>/</span>
+                    <p>Haqqımızda</p> <span>/</span>
+                    <p>Kiçik Biznes</p> <span>/</span>
+                    <p>İnvestorlarla əlaqə</p> <span>/</span>
+                    <p>KOB</p> <span>/</span>
+                    <p>Korporativ</p>
+                </div>
+                <div id="footer-contact">
+                    <h6>Əlaqə</h6>
+                    <p>Nizami küç. 67, AZ1005 Bakı, Azərbaycan</p>
+                    <p>Tel.: (+994 12) 493 00 91</p>
+                    <p>Faks: (+994 12) 493 40 91</p>
+                    <p>E-poçt: info@abb-bank.az</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- 
+            <div id="footer-1" class="container">
+                <div id="footer-1-img">
+                    <a href=""><img src="img/abblogo.png" alt="ABB" /></a>
+                </div>
+                <div id="footer-1-a">
+                    <a href=""><i class="fa-regular fa-circle-right"></i><span>İnternet bankçılıq</span></a>
+                </div>
+            </div>
+            <div id="footer-2">
+                <div class="grid-container">
+                    <div class="grid">
+                        <div class="grid-h">
+                            <h2>Fərdi şəxlər</h2>
+                            <h6>Kartlar</h6>
+                            <h6>Kreditlər</h6>
+                            <h6>Onlayn xidmətlər</h6>
+                            <h6>Kampaniyalar</h6>
+                            <h6>Keşbek</h6>
+                            <h6>Əmanətlər</h6>
+                            <h6>İpoteka</h6>
+                            <h6>Pul köçürmələri</h6>
+                            <h6>Cari hesab</h6>
+                            <h6>Ödənişlər</h6>
+                            <h6>Sual-cavab</h6>
+                            <h6>Məlumatlandırma və Standart Şərtlər</h6>
+                            <h6>Faydalı linklər</h6>
+                        </div>
+                        <div class="grid-h">
+                            <h2>Haqqımızda</h2>
+                            <h6>Missiya və strateji baxış</h6>
+                            <h6>Rəhbərlik</h6>
+                            <h6>Məlumatların açıqlanması</h6>
+                            <h6>Brend mərkəzi</h6>
+                            <h6>Törəmə və asılı müəssisələrdə iştirak payı</h6>
+                            <h6>Müxbir banklar</h6>
+                            <h6>Maliyyə və monitorinqi və komplayns</h6>
+                            <h6>İnsan Resursları</h6>
+                            <h6>Korporativ Sosial Məsuliyyət / Sponsorluq</h6>
+                            <h6>Siyasətlərimiz</h6>
+                            <h6>Mükafatlar</h6>
+                            <h6>Təklif və şikayətlər</h6>
+                        </div>
+                        <div class="grid-h">
+                            <h2>Kiçik Biznes</h2>
+                            <h6>Onlayn kreditlər</h6>
+                            <h6>Ödəniş sistemləri</h6>
+                            <h6>Gündəlik bankçılıq</h6>
+                            <h6>E-mühasibim</h6>
+                            <h6>Fərdi müştəri təmsilçiliyi</h6>
+                        </div>  
+                        <div class="grid-h">
+                            <h2>İnvestorlarla əlaqə</h2>
+                            <h6>ABB səhmləri</h6>
+                            <h6>Hesabatlar</h6>
+                            <h6>Səhmdarlar</h6>
+                            <h6>Reytinqlər</h6>
+                            <h6>Korporativ təqdimat</h6>
+                            <h6>Digər məlumatlar</h6>
+                        </div>
+                        <div class="grid-h">
+                            <h2>KOB</h2>
+                            <h6>Biznes kreditləri</h6>
+                            <h6>Məsafədən hesab aç</h6>
+                            <h6>ABB Link</h6>
+                            <h6>Xidmət paketləri</h6>
+                            <h6>Ödəniş kartları</h6>
+                            <h6>Sənədli əməliyyatlar</h6>
+                            <h6>Köçürmələr</h6>
+                            <h6>Elektron bankçılıq</h6>
+                            <h6>Hesablar</h6>
+                            <h6>Əmanətlər</h6>
+                        </div>
+                        <div class="grid-h">
+                            <h2>Korporativ</h2>
+                            <h6>Korporativ kreditlər</h6>
+                            <h6>Məsafədən hesab aç</h6>
+                            <h6>Ödəniş kartları</h6>
+                            <h6>Əməkhaqqı layihəsi</h6>
+                            <h6>Sənədli əməliyyatlar</h6>
+                            <h6>Elektron bankçılıq</h6>
+                            <h6>Köçürmələr</h6>
+                            <h6>Hesablar</h6>
+                            <h6>Əmanətlər</h6>
+                        </div>  
+                        <div class="grid-h" id="contact">
+                            <h2 id="contact-h">Əlaqə</h2>
+                            <h6>Nizami küç. 67, AZ1005 Bakı, Azərbaycan</h6>
+                            <h6>Tel.: (+994 12) 493 00 91</h6>
+                            <h6>Faks: (+994 12) 493 40 91</h6>
+                            <h6>E-poçt: info@abb-bank.az</h6>
+                            <h6>Sənədli əməliyyatlar</h6>
+                            <h6><i class="fa-solid fa-phone"></i> 937</h6>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+             -->
+        </footer>
+    </body>
+</html>
